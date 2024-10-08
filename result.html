@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnosis Result</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <button class="back-button" onclick="window.location.href='index.html'">
+            <i class="fas fa-arrow-left"></i>
+        </button>
+        <h1>Diagnosis Result</h1>
+    </div>
+    <div class="result-container" id="result"></div>
+</div>
+
+<script>
+    // Ambil hasil dari localStorage
+    const resultDiv = document.getElementById('result');
+    const diagnosisResult = JSON.parse(localStorage.getItem('diagnosisResult'));
+
+    if (diagnosisResult && diagnosisResult.length > 0) {
+        resultDiv.innerHTML = `<h2>Detected Diseases:</h2><p>${diagnosisResult.join(', ')}</p>`;
+    } else {
+        resultDiv.innerHTML = "<h2>No diseases detected</h2><p>based on the symptoms provided.</p>";
+    }
+</script>
+
+</body>
+</html>

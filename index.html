@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expert System - Corn Plant Disease Detection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Halaman Intro -->
+<div class="intro-container" id="intro">
+  <div class="intro-content">
+      <h1>Expert System to Detect Diseases in Corn Plants</h1>
+      <button id="startButton">Get Started</button>
+  </div>
+</div>
+
+<div class="container" id="mainContent" style="display: none;">
+    <h1>Corn Plant Disease Detection</h1>
+    <form id="expertForm">
+        <div class="question">
+            <label for="fact1">Lesi berwarna abu-abu kehijauan atau cokelat pada daun</label>
+            <input type="checkbox" id="fact1" name="fact1">
+        </div>
+        <div class="question">
+            <label for="fact2">Lesi dikelilingi oleh lingkaran berwarna kuning</label>
+            <input type="checkbox" id="fact2" name="fact2">
+        </div>
+        <div class="question">
+            <label for="fact3">Lesi dimulai dari ujung atau tepi daun</label>
+            <input type="checkbox" id="fact3" name="fact3">
+        </div>
+        <div class="question">
+            <label for="fact4">Lesi berbentuk elips panjang berwarna abu-abu kehijauan</label>
+            <input type="checkbox" id="fact4" name="fact4">
+        </div>
+        <div class="question">
+            <label for="fact5">Lesi sejajar dengan urat-urat daun</label>
+            <input type="checkbox" id="fact5" name="fact5">
+        </div>
+        <div class="question">
+            <label for="fact6">Lesi berubah menjadi cokelat seiring waktu</label>
+            <input type="checkbox" id="fact6" name="fact6">
+        </div>
+        <div class="question">
+            <label for="fact7">Bintik-bintik kecil berwarna cokelat kemerahan pada daun</label>
+            <input type="checkbox" id="fact7" name="fact7">
+        </div>
+        <div class="question">
+            <label for="fact8">Bintik-bintik berisi spora berwarna karat</label>
+            <input type="checkbox" id="fact8" name="fact8">
+        </div>
+        <div class="question">
+            <label for="fact9">Daun mungkin menguning dan mati</label>
+            <input type="checkbox" id="fact9" name="fact9">
+        </div>
+        <div class="question">
+            <label for="fact10">Batang mengalami pelapukan</label>
+            <input type="checkbox" id="fact10" name="fact10">
+        </div>
+        <div class="question">
+            <label for="fact11">Akar tanaman membusuk</label>
+            <input type="checkbox" id="fact11" name="fact11">
+        </div>
+        <div class="question">
+            <label for="fact12">Daun berwarna hijau pucat</label>
+            <input type="checkbox" id="fact12" name="fact12">
+        </div>
+        <div class="question">
+            <label for="fact13">Daun terlipat dan layu</label>
+            <input type="checkbox" id="fact13" name="fact13">
+        </div>
+        <div class="question">
+            <label for="fact14">Daun menggulung di tepi</label>
+            <input type="checkbox" id="fact14" name="fact14">
+        </div>
+        <div class="question">
+            <label for="fact15">Akar menjadi hitam dan lemah</label>
+            <input type="checkbox" id="fact15" name="fact15">
+        </div>
+        <div class="question">
+            <label for="fact16">Bercak hitam kecil pada daun</label>
+            <input type="checkbox" id="fact16" name="fact16">
+        </div>
+        <div class="question">
+            <label for="fact17">Daun tidak tumbuh dengan normal</label>
+            <input type="checkbox" id="fact17" name="fact17">
+        </div>
+        <div class="question">
+            <label for="fact18">Daun terlihat keriput atau cacat</label>
+            <input type="checkbox" id="fact18" name="fact18">
+        </div>
+        <div class="question">
+            <label for="fact19">Tanaman tumbuh kerdil</label>
+            <input type="checkbox" id="fact19" name="fact19">
+        </div>
+        <div class="question">
+            <label for="fact20">Tanaman tidak menghasilkan biji</label>
+            <input type="checkbox" id="fact20" name="fact20">
+        </div>
+        <button type="button" id="checkButton">Check Disease</button>
+    </form>
+
+    <div class="result" id="result"></div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

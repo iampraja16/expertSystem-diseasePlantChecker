@@ -1,0 +1,133 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  overflow-x: hidden; /* Hanya sembunyikan horizontal scroll */
+}
+
+html, body {
+  height: 100%;
+}
+
+/* Intro Page */
+.intro-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background: linear-gradient(120deg, #4CAF50, #388e3c); /* Gradasi hijau */
+  overflow: hidden;
+}
+
+.intro-content {
+  z-index: 10; /* Pastikan konten di atas */
+  display: flex; /* Gunakan flexbox */
+  flex-direction: column; /* Susun konten secara kolom */
+  align-items: center; /* Pusatkan secara horizontal */
+  justify-content: center; /* Pusatkan secara vertical */
+  text-align: center; /* Rata tengah untuk teks */
+}
+
+.intro-content h1 {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  animation: fadeInDown 1s ease-out;
+}
+
+#startButton {
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #2e7d32;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#startButton:hover {
+  background-color: #1b5e20;
+}
+
+
+/* Main Content Page */
+.container {
+  background: white; /* Kotak dengan latar belakang putih */
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px; /* Tambahkan padding */
+  border-radius: 8px; /* Sudut melengkung */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Bayangan kotak */
+}
+
+h1 {
+  text-align: center;
+  color: #4CAF50;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.question {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.result {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.result strong {
+  color: #333;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: scale(0.9); }
+  100% { opacity: 1; transform: scale(1); }
+}

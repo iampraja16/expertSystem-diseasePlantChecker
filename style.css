@@ -1,4 +1,3 @@
-/* Global Styles */
 * {
   margin: 0;
   padding: 0;
@@ -8,14 +7,13 @@
 body {
   font-family: 'Arial', sans-serif;
   background-color: #f4f4f4;
-  overflow-x: hidden; /* Hanya sembunyikan horizontal scroll */
+  overflow-x: hidden; 
 }
 
 html, body {
   height: 100%;
 }
 
-/* Intro Page */
 .intro-container {
   display: flex;
   justify-content: center;
@@ -23,17 +21,17 @@ html, body {
   height: 100vh;
   width: 100%;
   position: relative;
-  background: linear-gradient(120deg, #4CAF50, #388e3c); /* Gradasi hijau */
+  background: linear-gradient(120deg, #4CAF50, #388e3c);
   overflow: hidden;
 }
 
 .intro-content {
-  z-index: 10; /* Pastikan konten di atas */
-  display: flex; /* Gunakan flexbox */
-  flex-direction: column; /* Susun konten secara kolom */
-  align-items: center; /* Pusatkan secara horizontal */
-  justify-content: center; /* Pusatkan secara vertical */
-  text-align: center; /* Rata tengah untuk teks */
+  z-index: 10; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center;
+  text-align: center; 
 }
 
 .intro-content h1 {
@@ -58,15 +56,13 @@ html, body {
   background-color: #1b5e20;
 }
 
-
-/* Main Content Page */
 .container {
-  background: white; /* Kotak dengan latar belakang putih */
+  background: white; 
   max-width: 600px;
   margin: 40px auto;
-  padding: 20px; /* Tambahkan padding */
-  border-radius: 8px; /* Sudut melengkung */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Bayangan kotak */
+  padding: 20px; 
+  border-radius: 8px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
 h1 {
@@ -121,7 +117,6 @@ button:hover {
   color: #333;
 }
 
-/* Animations */
 @keyframes fadeInDown {
   0% { opacity: 0; transform: translateY(-20px); }
   100% { opacity: 1; transform: translateY(0); }

@@ -61,18 +61,7 @@ function runExpertSystem()
           }
       });
   } while (changed);
-  displayResult(inferredFacts);
-}
-
-function displayResult(inferredFacts) 
-{
-  const resultDiv = document.getElementById('result');
-  if (inferredFacts.size > 0) 
-    {
-      resultDiv.innerHTML = "<strong>Penyakit:</strong> " + Array.from(inferredFacts).join(', ');
-    }
-    else 
-    {
-      resultDiv.innerHTML = "<strong>tidak terdeteksi penyakit</strong> based on the symptoms provided.";
-    }
+  
+  localStorage.setItem('diagnosisResult', JSON.stringify(Array.from(inferredFacts)));
+  window.location.href = 'result.html';
 }
